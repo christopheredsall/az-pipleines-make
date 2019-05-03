@@ -1,4 +1,4 @@
-$(eval TEST=$(shell echo Hello World | ask '{print $$2}')) 
+$(eval TEST=$(shell echo Hello World | awk '{print $$2}')) 
 
 all:
 	echo $(TEST)
